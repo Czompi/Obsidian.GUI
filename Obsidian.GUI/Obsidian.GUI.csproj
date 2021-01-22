@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+	</PropertyGroup>
+	<ItemGroup>
+		<Folder Include="Models\" />
+		<AvaloniaResource Include="Assets\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="0.10.0-rc2" />
+		<PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.0-rc2" />
+		<PackageReference Include="Avalonia.Desktop" Version="0.10.0-rc2" />
+		<PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-rc2" />
+		<PackageReference Include="Dotnet.Bundle" Version="0.9.13" />
+		<PackageReference Include="MessageBox.Avalonia" Version="0.10.7-rc1" />
+	</ItemGroup>
+</Project>
