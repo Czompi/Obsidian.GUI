@@ -20,6 +20,7 @@ namespace Obsidian.GUI.Views
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
+            Tabs.Add()
         }
 
     }

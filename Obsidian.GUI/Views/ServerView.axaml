@@ -3,14 +3,18 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:view="clr-namespace:Obsidian.GUI.Views;assembly=Obsidian.GUI"
+             xmlns:vm="clr-namespace:Obsidian.GUI.ViewModels;assembly=Obsidian.GUI"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="Obsidian.GUI.Views.ServerView">
+	<UserControl.DataContext>
+		<vm:ServerViewViewModel/>
+	</UserControl.DataContext>
 	<TabControl TabStripPlacement="Left">
 		<TabItem Header="Console" Classes="tabitem-success" VerticalContentAlignment="Center">
-			<view:PageConsole/>
+			<view:PageConsole DataContext="{Binding PageConsoleViewModel}"/>
 		</TabItem>
 		<TabItem Header="Player list" Classes="tabitem-success" VerticalContentAlignment="Center">
-			<view:PagePlayers/>
+			<view:PagePlayers DataContext="{Binding PagePlayersViewModel}"/>
 		</TabItem>
 	</TabControl>
 </UserControl>

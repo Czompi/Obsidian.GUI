@@ -9,7 +9,6 @@ namespace Obsidian.GUI.Views
         public PageSummary()
         {
             this.InitializeComponent();
-            Globals.ObsidianServer.StartServer(0);
         }
 
         private void InitializeComponent()

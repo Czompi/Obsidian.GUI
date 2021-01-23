@@ -6,7 +6,7 @@
              x:Class="Obsidian.GUI.Views.PageConsole">
 	<Grid Background="Black">
 		<Grid.RowDefinitions>1*,Auto</Grid.RowDefinitions>
-		<Label Content="{Binding ServerLog}" Foreground="White" FontSize="12" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
+		<Label Content="{Binding Log}" Foreground="White" FontSize="12" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
 		<Grid Grid.Row="1">
 			<Grid.ColumnDefinitions>1*,Auto</Grid.ColumnDefinitions>
 			<TextBox VerticalContentAlignment="Center" FontSize="16" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>

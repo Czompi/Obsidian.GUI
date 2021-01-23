@@ -10,7 +10,7 @@
         Icon="/Assets/obsidian-logo.ico"
         Title="Obsidian.GUI">
 
-	<TabControl>
+	<TabControl x:Name="Tabs">
 		<TabItem Header="Summary" Classes="tabitem-primary" VerticalContentAlignment="Center">
 			<view:PageSummary/>
 		</TabItem>
