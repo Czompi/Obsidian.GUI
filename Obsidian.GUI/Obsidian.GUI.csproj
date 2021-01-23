@@ -5,15 +5,39 @@
 		<LangVersion>9.0</LangVersion>
 	</PropertyGroup>
 	<ItemGroup>
-		<Folder Include="Models\" />
 		<AvaloniaResource Include="Assets\**" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Avalonia" Version="0.10.0-rc2" />
-		<PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.0-rc2" />
-		<PackageReference Include="Avalonia.Desktop" Version="0.10.0-rc2" />
-		<PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0-rc2" />
+	  <AvaloniaResource Remove="Assets\Fonts\Roboto-LICENSE.txt" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Avalonia" Version="0.10.0" />
+		<PackageReference Include="Avalonia.Controls.DataGrid" Version="0.10.0" />
+		<PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+		<PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
 		<PackageReference Include="Dotnet.Bundle" Version="0.9.13" />
 		<PackageReference Include="MessageBox.Avalonia" Version="0.10.7-rc1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <ProjectReference Include="..\..\..\GitHub.CzompiSoftware\CustomControls.Avalonia\CustomControls.AvaloniaUI.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Reference Include="Obsidian">
+	    <HintPath>..\..\Obsidian\Obsidian\bin\Debug\net5.0\Obsidian.dll</HintPath>
+	  </Reference>
+	  <Reference Include="Obsidian.API">
+	    <HintPath>..\..\Obsidian\Obsidian.API\bin\Debug\net5.0\Obsidian.API.dll</HintPath>
+	  </Reference>
+	</ItemGroup>
+	<ItemGroup>
+	  <Compile Update="Views\PageConsole.axaml.cs">
+	    <DependentUpon>PageConsole.axaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PageSummary.axaml.cs">
+	    <DependentUpon>PageSummary.axaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\PagePlayers.axaml.cs">
+	    <DependentUpon>PagePlayers.axaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 </Project>

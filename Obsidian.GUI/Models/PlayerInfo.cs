@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Obsidian.GUI.ViewModels
+namespace Obsidian.GUI.Models
 {
     public class PlayerInfo
     {

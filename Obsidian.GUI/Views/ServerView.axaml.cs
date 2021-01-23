@@ -1,26 +1,19 @@
 ﻿using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
-using System;
 
 namespace Obsidian.GUI.Views
 {
-    public class MainWindow : Window
+    public class ServerView : UserControl
     {
-        public MainWindow()
+        public ServerView()
         {
-            InitializeComponent();
-            Globals.MainWindow = this;
-#if DEBUG
-            //this.AttachDevTools();
-#endif
+            this.InitializeComponent();
         }
 
         private void InitializeComponent()
         {
             AvaloniaXamlLoader.Load(this);
         }
-
     }
 }

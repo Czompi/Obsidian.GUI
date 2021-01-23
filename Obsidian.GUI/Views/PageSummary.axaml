@@ -1,0 +1,31 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="clr-namespace:Obsidian.GUI.ViewModels;assembly=Obsidian.GUI"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="Obsidian.GUI.Views.PageSummary">
+	<UserControl.DataContext>
+		<vm:PageSummaryViewModel/>
+	</UserControl.DataContext>
+	<Grid Margin="4">
+		<Grid.RowDefinitions>Auto,Auto,Auto</Grid.RowDefinitions>
+		<Grid Grid.Row="0" >
+			<Grid.ColumnDefinitions>Auto,8,Auto,8,Auto,8,Auto</Grid.ColumnDefinitions>
+			<Button Grid.Column="0" Content="Start" Classes="btn btn-success" IsEnabled="{Binding !Started}"/>
+			<Button Grid.Column="2" Content="Stop" Classes="btn btn-danger" IsEnabled="{Binding Started}"/>
+			<Button Grid.Column="4" Content="Restart" Classes="btn btn-info" IsEnabled="{Binding Started}"/>
+			<Button Grid.Column="6" Content="Kill" Classes="btn btn-warning" IsEnabled="{Binding Started}"/>
+		</Grid>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>Auto,Auto</Grid.ColumnDefinitions>
+			<TextBlock Grid.Column="0" Text="Server version: "/>
+			<TextBlock Grid.Column="1" Text="{Binding ObsidianVersion}" FontWeight="Bold"/>
+		</Grid>
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>Auto,Auto</Grid.ColumnDefinitions>
+			<TextBlock Grid.Column="0" Text="Minecraft version: "/>
+			<TextBlock Grid.Column="1" Text="{Binding ServerVersion}" FontWeight="Bold"/>
+		</Grid>
+	</Grid>
+</UserControl>

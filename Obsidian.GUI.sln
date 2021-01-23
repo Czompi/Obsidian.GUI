@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obsidian.GUI", "Obsidian.GUI\Obsidian.GUI.csproj", "{4E987AC1-1899-4A62-B74D-58F2E53C0B70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Obsidian.GUI", "Obsidian.GUI\Obsidian.GUI.csproj", "{4E987AC1-1899-4A62-B74D-58F2E53C0B70}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomControls.AvaloniaUI", "..\..\GitHub.CzompiSoftware\CustomControls.Avalonia\CustomControls.AvaloniaUI.csproj", "{BBCD849F-BABA-418F-85EF-79389641B964}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4E987AC1-1899-4A62-B74D-58F2E53C0B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E987AC1-1899-4A62-B74D-58F2E53C0B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E987AC1-1899-4A62-B74D-58F2E53C0B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBCD849F-BABA-418F-85EF-79389641B964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCD849F-BABA-418F-85EF-79389641B964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCD849F-BABA-418F-85EF-79389641B964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCD849F-BABA-418F-85EF-79389641B964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
