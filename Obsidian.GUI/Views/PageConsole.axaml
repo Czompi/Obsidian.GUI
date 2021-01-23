@@ -9,7 +9,7 @@
 		<Label Content="{Binding Log}" Foreground="White" FontSize="12" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
 		<Grid Grid.Row="1">
 			<Grid.ColumnDefinitions>1*,Auto</Grid.ColumnDefinitions>
-			<TextBox VerticalContentAlignment="Center" FontSize="16" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
+			<TextBox VerticalContentAlignment="Center" FontSize="16" FontWeight="Thin" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
 			<Button Grid.Column="1" Classes="btn btn-secondary" Content="Send" />
 		</Grid>
 	</Grid>
