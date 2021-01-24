@@ -19,13 +19,13 @@
 		</Grid>
 		<Grid Grid.Row="2">
 			<Grid.ColumnDefinitions>Auto,Auto</Grid.ColumnDefinitions>
-			<TextBlock Grid.Column="0" Text="Server version: " FontWeight="Thin"/>
-			<TextBlock Grid.Column="1" Text="{Binding ObsidianVersion}" FontWeight="Bold"/>
+			<TextBlock Grid.Column="0" Text="Server version: " FontWeight="Thin" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
+			<TextBlock Grid.Column="1" Text="{Binding ObsidianVersion}" FontWeight="Bold" FontFamily="/Assets/Fonts/Roboto-Black.ttf"/>
 		</Grid>
 		<Grid Grid.Row="4">
 			<Grid.ColumnDefinitions>Auto,Auto</Grid.ColumnDefinitions>
-			<TextBlock Grid.Column="0" Text="Minecraft version: "/>
-			<TextBlock Grid.Column="1" Text="{Binding ServerVersion}" FontWeight="Bold"/>
+			<TextBlock Grid.Column="0" Text="Minecraft version: " FontWeight="Thin" FontFamily="/Assets/Fonts/Roboto-Thin.ttf"/>
+			<TextBlock Grid.Column="1" Text="{Binding ServerVersion}" FontWeight="Bold" FontFamily="/Assets/Fonts/Roboto-Black.ttf"/>
 		</Grid>
 	</Grid>
 </UserControl>
