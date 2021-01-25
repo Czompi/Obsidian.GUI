@@ -1,2 +1,2 @@
-# Obsidian.GUI
-Management GUI for Obsidian servers
+# [WIP] A management GUI for Obsidian servers
+
